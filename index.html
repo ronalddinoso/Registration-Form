@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    
+    <header class="main-header">
+        <h1>THE CODE REVIEW</h1>
+    </header>
+
+    <div class="signup">
+        <h1>Signup for our newsletter</h1>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+
+    <hr class="style1">
+    <hr class="style2">
+    <!--------------------------------form--------------------------------- -->
+    <form action="index.html" method="POST">
+        <fieldset>
+            <legend class="contact-info"><b>Contact Information</b></legend>
+            <div class="contact-info">
+                <div class="item-1 item">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name"><br>
+                </div>
+                <div class="item-2 item">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="mail" name="user_email"><br>
+                </div>
+                <div class="item-3 item">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="user_number"><br>
+                </div> 
+                <div class="item-4 item">
+                    <label for="address">Street Address</label>
+                    <input type="address" id="address" name="user_address"><br>
+                </div>
+                <div class="item-5 item">
+                    <label for="city">City</label>
+                    <input type="city" id="city" name="user_city"><br>
+                </div>
+                <div class="item-5 item">
+                    <label for="state">State</label>
+                    <select id="state" name="user_state">
+                            <option value="california">California</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="texas">Texas</option>
+                            <option value="washington">Washington</option>
+                            <option value="arizona">Arizona</option>
+                    </select><br>
+                </div>
+                <div class="item-6 item">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="zipcode" id="zipcode" name="user_zipcode">
+                </div>
+          </div><!-- .contact-info -->
+        </fieldset><br>
+        <hr class="style2">
+        <fieldset>
+            <legend><b>Newsletter</b></legend>
+                <p>Select the newsletters you would like to recieve</p>
+                <input type="checkbox" id="htmlnews" value="html_news" name="html_news"><label for="htmlnews">HTML News</label><br>
+                <input type="checkbox" id="cssnews" value="css_news" name="css_news"><label for="cssnews">CSS News</label><br>
+                <input type="checkbox" id="javanews" value="java_news" name="java_news"><label for="javanews">Javascript News</label><br>
+
+            <legend class="newsletter-format">Newsletter format</legend>
+                <input type="radio" id="html" value="html_format" name="html_format"><label for="html">HTML</label><br>
+                <input type="radio" id="plain" value="html_format" name="html_format"><label for="plain">Plain text</label>
+
+            <p>Other topics you'd like to hear about</p>
+            <textarea id="topics" name="user_topics"></textarea>
+        </fieldset>
+        <button type="submit">Sign Up</button>
+        <p class="copyright">Copyright The Code Review</p>
+
+    </form>
+    
+</body>
+</html>

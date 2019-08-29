@@ -1,0 +1,180 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+
+.style1 {  
+    max-width: 800px;
+    height: 5px;
+    background-color: rgb(8, 8, 75);
+} 
+
+.style2 {  
+  max-width: 800px; 
+  background-color: rgb(8, 8, 75);
+  margin-bottom: 3em;
+} 
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/*-------------------- header --------------------------*/
+
+.main-header h1 {
+    background: rgb(8, 8, 75);
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+/*-------------------- signup --------------------------*/
+
+.signup {
+    text-align: center;
+}
+
+.signup p {
+  color: lightgrey;
+  border-bottom: border;
+}
+
+
+/*-------------------- form --------------------------*/
+
+.contact-info {
+  margin-bottom: 1em;
+}
+
+form {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  /* background: #f4f7f8; */
+  border-radius: 8px;
+}
+
+fieldset {
+  border: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.item label {
+  width: 25%;
+}
+
+.item-6 input[type="zipcode"] {
+  width: 150px;
+}
+
+
+.newsletter-format {
+  margin: 1em 0;
+}
+
+
+/*-------------------- input --------------------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+input[type="city"],
+input[type="zipcode"],
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 500px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+/*-------------------- Other Topics --------------------------*/
+
+textarea {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+/*-------------------- button --------------------------*/
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #3ac1ab;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac1ab;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+
+/*-------------------- bottom --------------------------*/
+
+
+.copyright {
+  color: lightgrey;
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 320) {
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header {
+    background: rgb(8, 8, 75);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+}
