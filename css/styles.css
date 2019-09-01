@@ -8,16 +8,25 @@
 }
 
 .style1 {  
-    max-width: 800px;
+    width: 80%;
     height: 5px;
+    margin: auto;
+    margin-top: 2.5em;
     background-color: rgb(8, 8, 75);
 } 
 
 .style2 {  
-  max-width: 800px; 
+  width: 80%; 
   background-color: rgb(8, 8, 75);
   margin-bottom: 3em;
 } 
+
+.style3 {  
+  width: 100%; 
+  background-color: rgb(8, 8, 75);
+  margin-bottom: 3em;
+} 
+
 
 /* ================================= 
   Base Layout Styles
@@ -37,11 +46,17 @@
 
 .signup {
     text-align: center;
+    width: 80%;
+    margin: auto;
+
 }
 
 .signup p {
   color: lightgrey;
   border-bottom: border;
+  width: 80%;
+  margin: auto;
+
 }
 
 
@@ -52,10 +67,12 @@
 }
 
 form {
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 80%;
+  margin: auto;
   margin: 10px auto;
-  padding: 10px 20px;
-  /* background: #f4f7f8; */
   border-radius: 8px;
 }
 
@@ -65,16 +82,8 @@ fieldset {
 
 .item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   
-}
-
-.item label {
-  width: 25%;
-}
-
-.item-6 input[type="zipcode"] {
-  width: 150px;
 }
 
 
@@ -99,11 +108,14 @@ select {
   margin: 0;
   outline: 0;
   padding: 15px;
-  width: 500px;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+}
+
+.item-6 input[type="zipcode"] {
+  width: 50%;
 }
 
 input[type="checkbox"]:checked + label {
@@ -157,17 +169,47 @@ button {
 }
 
 
-
-
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (max-width: 320) {
+@media (min-width: 720px) {
+
+  .item {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .item label {
+    width: 25%;
+  }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+input[type="city"],
+input[type="zipcode"],
+select {
+  width: 75%;
+}
+
+.item-6 input[type="zipcode"] {
+  width: 35%;
+}
+
+
+}
+
+
+
+
+/* @media (max-width: 720px) {
   
   .item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .main-header {
@@ -177,4 +219,33 @@ button {
     width: 100%;
 }
 
+.item label {
+  width: 25%;
 }
+
+.item-6 input[type="zipcode"] {
+  width: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+input[type="city"],
+input[type="zipcode"],
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 500px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+} */
