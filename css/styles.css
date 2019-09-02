@@ -118,9 +118,22 @@ select {
   width: 50%;
 }
 
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
   font-weight: bold;
 }
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+input:focus, 
+textarea:focus {
+  box-shadow: 0 0 0 2px rgb(21, 51, 150);
+}
+
+
 
 /*-------------------- Other Topics --------------------------*/
 
