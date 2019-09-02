@@ -23,7 +23,8 @@
 
     <hr class="style1">
     <hr class="style2">
-    <!--------------------------------form--------------------------------- -->
+
+
     <form action="index.html" method="POST">
         <fieldset>
             <legend class="contact-info"><b>Contact Information</b></legend>
@@ -34,7 +35,7 @@
                 </div>
                 <div class="item-2 item">
                     <label for="email">Email Address</label>
-                    <input type="email" id="mail" name="user_email" placeholder="Required"><br>
+                    <input type="email" id="email" name="user_email" placeholder="Required"><br>
                 </div>
                 <div class="item-3 item">
                     <label for="number">Phone Number</label>
@@ -42,11 +43,11 @@
                 </div> 
                 <div class="item-4 item">
                     <label for="address">Street Address</label>
-                    <input type="address" id="address" name="user_address"><br>
+                    <input type="text" id="address" name="user_address"><br>
                 </div>
                 <div class="item-5 item">
                     <label for="city">City</label>
-                    <input type="city" id="city" name="user_city"><br>
+                    <input type="text" id="city" name="user_city"><br>
                 </div>
                 <div class="item-5 item">
                     <label for="state">State</label>
@@ -59,10 +60,11 @@
                             <option value="washington">Washington</option>
                             <option value="arizona">Arizona</option>
                     </select><br>
+
                 </div>
                 <div class="item-6 item">
                     <label for="zipcode">Zip Code</label>
-                    <input type="zipcode" id="zipcode" name="user_zipcode">
+                    <input type="text" id="zipcode" name="user_zipcode">
                 </div>
           </div><!-- .contact-info -->
         </fieldset><br>
@@ -74,7 +76,7 @@
                 <input type="checkbox" id="cssnews" value="css_news" name="css_news"><label for="cssnews">CSS News</label><br>
                 <input type="checkbox" id="javanews" value="java_news" name="java_news"><label for="javanews">Javascript News</label><br>
 
-            <legend class="newsletter-format">Newsletter format</legend>
+            <p class="newsletter-format"><b>Newsletter format</b></p>
                 <input type="radio" id="html" value="html_format" name="html_format"><label for="html">HTML</label><br>
                 <input type="radio" id="plain" value="html_format" name="html_format"><label for="plain">Plain text</label>
 

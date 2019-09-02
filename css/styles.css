@@ -53,7 +53,6 @@
 
 .signup p {
   color: lightgrey;
-  border-bottom: border;
   width: 80%;
   margin: auto;
 
@@ -186,7 +185,7 @@ button {
   Media Queries
 ==================================== */
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
 
   .item {
     display: flex;
